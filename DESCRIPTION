@@ -1,0 +1,14 @@
+Create a directory for locking purpose
+# $Header$
+#
+# $Log$
+# Revision 1.1  2008-08-01 00:11:14  tino
+# first commit
+#
+
+This does not create a lockfile, it creates a lockdir.
+While it waits it presents you with a waiting indicator.
+Returns true if successful, false otherwise.
+You can give a maximum waiting time.  If this time
+is reached the lockdir is removed via rmdir.
+(This can fail, by purpose.)
